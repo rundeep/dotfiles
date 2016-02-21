@@ -1,0 +1,61 @@
+! To reread your .Xresources file, and throw away your old resources, you can type:
+! xrdb ~/.Xresources
+!
+!-----------------------------------------------------------------------------
+! Xft settings
+
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+!# Anti-liasing
+Xft.lcdfilter           : lcddefault
+
+! FONT Using XLFD (created via e.g. xfontsel)
+!*font                   : -misc-fixed-medium-r-semicondensed-*-12-90-100-*-c-60-iso8859-1
+! FONT Using Xft
+*font                   : xft:Inconsolata LGC:style=Medium:pixelsize=14
+*italicFont             : xft:Inconsolata LGC:style=Italic:pixelsize=14
+*bolditalicFont         : xft:Inconsolata LGC:style=Bold-Italic:pixelsize=14
+*boldFont               : xft:Inconsolata LGC:style=Bold:pixelsize=14
+*letterSpace            : -1
+
+!-----------------------------------------------------------------------------
+! настройка внешнего вида отдельных приложений
+!-----------------------------------------------------------------------------
+
+!xfontsel
+!XFontSel*sampleText.background: TEXTBG
+XFontSel*menu*showUnselectable: false
+XFontSel*MenuButton.shadowWidth: 0
+XFontsel*Toggle*ToggleStyle: check
+XFontsel*MenuButton*Justify:    left
+XFontsel*MenuButton*MenuButtonStyle: select
+.xfontsel.pane.commandBox.quitButton.background: #777777
+.xfontsel.pane.commandBox.quitButton.foreground: snow
+.xfontsel.pane.commandBox.ownButton.background: orange3
+.xfontsel.pane.commandBox.ownButton.foreground: snow
+.xfontsel.pane.commandBox.countLabel.background: snow
+.xfontsel.pane.viewPort.sampleText.background: #777777
+.xfontsel.pane.viewPort.sampleText.foreground: snow
+.xfontsel.pane.fieldBox.MenuButton.borderWidth: 1
+.xfontsel.pane.fieldBox.MenuButton.internalHeight: 1
+.xfontsel.pane.fieldBox.MenuButton.internalWidth: 2
+.xfontsel.pane.fieldBox.MenuButton.shapeStyle: rectangle
+
+mutt.font               : -misc-fixed-medium-r-semicondensed-*-12-90-100-*-c-60-iso8859-1
+! Font and color settings for dzen
+dzen2.font              : -*-fixed-*-*-*-*-*-*-*-*-*-*-*-*
+dzen2.foreground        : #22EE11
+dzen2.background        : black
+
+!-----------------------------------------------------------------------------
+! Подключение файлов настроек
+!-----------------------------------------------------------------------------
+!#include ".colorsrc"
+#include ".solarized"
+#include ".urxvtrc"
+#include ".xtermrc"
+!#include ".emacsrc"
+!#include ".yeahconsolerc"

@@ -1,0 +1,3 @@
+ENTRY "/" URL "/"
+ENTRY "/media" URL "/media"
+ENTRY "/mnt/pigi" URL "/mnt/pigi"

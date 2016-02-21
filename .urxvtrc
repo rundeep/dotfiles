@@ -1,0 +1,141 @@
+! urxvt
+URxvt*inheritPixmap         : false
+URxvt.intensityStyles       : false
+URxvt*title                 : urxvt
+URxvt*termName              : rxvt-unicode-256color
+!URxvt.geometry             : 182x40
+URxvt*geometry              : 115x40
+URxvt*.transparent          : true
+URxvt*.shading              : 20
+
+
+! Meta modifier for keybindings
+!URxvt.modifier: super
+
+! URXVT ENABLE LINK SUPPORT
+!------------------------------------------------
+
+URxvt.perl-ext-common       : default,clipboard,url-select,keyboard-select,matcher,tabbedex,fullscreen,vtwheel
+!tabbed
+URxvt.matcher.button        : 1
+URxvt.perl-ext              : default,url-select
+URxvt.url-select.autocopy:  true
+URxvt.url-select.launcher   : /usr/bin/luakit
+URxvt.url-select.underline  : true
+URxvt.keysym.M-u            : perl:url-select:select_next
+URxvt.keysym.M-Escape       : perl:keyboard-select:activate
+URxvt.keysym.M-s            : perl:keyboard-select:search
+
+!disable the fucking bell
+URxvt.insecure              : false
+
+
+! URXVT COPY PASTE SHORTCUTS
+!------------------------------------------------
+! disable the stupid ctrl+shift 'feature'
+URxvt.iso14755                  : false
+URxvt.iso14755_52               : false
+
+URxvt.keysym.Shift-Control-C    : perl:clipboard:copy
+URxvt.keysym.Shift-Control-V    : perl:clipboard:paste
+!URxvt.keysym.M-c               : perl:clipboard:copy
+!URxvt.keysym.M-v               : perl:clipboard:pasteq
+
+
+! URXVT SCROLLBAR AND CURSOR STYLE
+!------------------------------------------------
+
+URxvt*saveLines             : 300000
+URxvt.scrollBar             : true
+URxvt*scrollstyle           : plain
+!URxvt*scrollTtyOutput       : false
+!URxvt*scrollTtyKeypress     : true
+!URxvt*mouseWheelScrollPage  : false
+URxvt*cursorBlink           : true
+URxvt*cursorUnderline       : true
+!URxvt*cursorColor           : #4e9a06
+URxvt*.borderLess           : false
+URxvt*.externalBorder       : 0
+URxvt*.internalBorder       : 0
+URxvt*.scrollBar_right      : true
+URxvt*.depth                : 32
+
+! URXVT TABS
+!------------------------------------------------
+
+URxvt.tabbedex.autohide     : yes
+URxvt.tabbedex.tabbar-fg    : 2
+URxvt.tabbedex.tabbar-bg    : 0
+URxvt.tabbedex.tab-fg       : 10
+URxvt.tabbedex.tab-bg       : 0
+URxvt.tabbedex.title        : yes
+URxvt.tabbedex.new-button   : no
+
+! URXVT FULLSCREEN TOGGLE
+!------------------------------------------------
+
+URxvt.keysym.F11            : perl:fullscreen:switch
+
+! URXVT FONTS
+!------------------------------------------------
+!URxvt*font: xft:Liberation Mono:pixelsize=14:antialias=false:hinting=true
+!URxvt*font: xft:Inconsolata:pixelsize=17:antialias=true:hinting=true
+!URxvt*boldFont: xft:Inconsolata:bold:pixelsize=17:antialias=true:hinting=true
+!URxvt*boldFont: xft:Liberation Mono:bold:pixelsize=14:antialias=false:hinting=true
+
+
+!URxvt*color0         : _color0
+!URxvt*color1         : _color1
+!URxvt*color2         : _color2
+!URxvt*color3         : _color3
+!URxvt*color4         : _color4
+!URxvt*color5         : _color5
+!URxvt*color6         : _color6
+!URxvt*color7         : _color7
+!URxvt*color8         : _color8
+!URxvt*color9         : _color9
+!URxvt*color10        : _color10
+!URxvt*color11        : _color11
+!URxvt*color12        : _color12
+!URxvt*color13        : _color13
+!URxvt*color14        : _color14
+!URxvt*color15        : _color15
+!URxvt*colorBD        : _colorBD
+!URxvt*colorIT        : _colorIT
+!URxvt*colorUL        : _colorUL
+!URxvt*foreground     : _foreground
+!URxvt*background     : _background
+!URxvt*cursorColor    : _cursorColor
+
+! Another urxvt color scheme:
+
+!URxvt*background: #2B2B2B
+!URxvt*foreground: #DEDEDE
+!
+!URxvt*colorUL: #86a2b0
+!
+!! black
+!URxvt*color0  : #2E3436
+!URxvt*color8  : #555753
+!! red
+!URxvt*color1  : #CC0000
+!URxvt*color9  : #EF2929
+!! green
+!URxvt*color2  : #4E9A06
+!URxvt*color10 : #8AE234
+!! yellow
+!URxvt*color3  : #C4A000
+!URxvt*color11 : #FCE94F
+!! blue
+!URxvt*color4  : #3465A4
+!URxvt*color12 : #729FCF
+!! magenta
+!URxvt*color5  : #75507B
+!URxvt*color13 : #AD7FA8
+!! cyan
+!URxvt*color6  : #06989A
+!URxvt*color14 : #34E2E2
+!! white
+!URxvt*color7  : #D3D7CF
+!URxvt*color15 : #EEEEEC
+!
